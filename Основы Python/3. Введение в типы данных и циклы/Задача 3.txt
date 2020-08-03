@@ -1,20 +1,20 @@
 geo_logs = [
-    {'visit1': ['Москва', 'Россия']},
-    {'visit2': ['Дели', 'Индия']},
-    {'visit3': ['Владимир', 'Россия']},
-    {'visit4': ['Лиссабон', 'Португалия']},
-    {'visit5': ['Париж', 'Франция']},
-    {'visit6': ['Лиссабон', 'Португалия']},
-    {'visit7': ['Тула', 'Россия']},
-    {'visit8': ['Тула', 'Россия']},
-    {'visit9': ['Курск', 'Россия']},
-    {'visit10': ['Архангельск', 'Россия']}
+    {'visit1': ['Moscow', 'Russia']},
+    {'visit2': ['Delhi', 'India']},
+    {'visit3': ['Vladimir', 'Russia']},
+    {'visit4': ['Lisbon', 'Portugal']},
+    {'visit5': ['Paris', 'France']},
+    {'visit6': ['Lisbon', 'Portugal']},
+    {'visit7': ['Tula', 'Russia']},
+    {'visit8': ['Tula', 'Russia']},
+    {'visit9': ['Kursk', 'Russia']},
+    {'visit10': ['Arkhangelsk', 'Russia']}
 ]
 
 new_geo_logs = []
 i = 0
 while i < len(geo_logs):
-  if (geo_logs[i]["visit" + str(i+1)][1]) == "Россия":
+  if (geo_logs[i]["visit" + str(i+1)][1]) == "Russia":
     new_geo_logs.append(geo_logs[i])
   i += 1
 print(new_geo_logs)

@@ -4,10 +4,10 @@ boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
 if len(girls) == len(boys):
   girls.sort ()
   boys.sort ()
-  print("Идеальные пары:")
+  print("Perfect couples:")
   i = 0
   while i < len(girls):
     print(girls[i] + " и " + boys[i])
     i += 1
 else:
-  print("Кому-то может не хватить пары, программа выполняться не будет")
+  print("Someone may not have enough pair, the program will not run")

@@ -1,6 +1,6 @@
-n = int(input ("¬ведите длину шоколада: "))
-m = int(input ("¬ведите ширину шоколада: "))
-k = int(input ("—колько хотите вз€ть долек? "))
+n = int(input ("Enter the length of the chocolate: "))
+m = int(input ("Enter the width of the chocolate: "))
+k = int(input ("How many slices do you want to take? "))
 
 if (k % n == 0) or (k % m == 0):
   print("YES")

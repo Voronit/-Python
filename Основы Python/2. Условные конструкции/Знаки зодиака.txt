@@ -1,62 +1,62 @@
-month = input ("Ââåäèòå ìåñÿö Âàøåãî ğîæäåíèÿ: ")
-day = int(input ("Ââåäèòå äåíü Âàøåãî ğîæäåíèÿ: "))
-if month == "ßíâàğü":
+month = input ("Enter the month of your birth: ")
+day = int(input ("Enter your birthday: "))
+if month == "January":
   if (day >= 1 and day < 21):
-    print("Âû - Êîçåğîã")
+    print("You are Capricorn")
   else:
-    print("Âû - Âîäîëåé")
-elif month == "Ôåâğàëü":
+    print("You are Aquarius")
+elif month == "February":
   if (day >= 1 and day < 19):
-    print("Âû - Âîäîëåé")
+    print("You are Aquarius")
   else:
-    print("Âû - Ğûáû")
-elif month == "Ìàğò":
+    print("You are Pisces")
+elif month == "March":
   if (day >= 1 and day < 21):
-    print("Âû - Ğûáû")
+    print("You are Pisces")
   else:
-    print("Âû - Îâåí")
-elif month == "Àïğåëü":
+    print("You are an Aries")
+elif month == "April":
   if (day >= 1 and day < 21):
-    print("Âû - Îâåí")
+    print("You are an Aries")
   else:
-    print("Âû - Òåëåö")
-elif month == "Ìàé":
+    print("You are a Taurus")
+elif month == "May":
   if (day >= 1 and day < 22):
-    print("Âû - Òåëåö")
+    print("You are a Taurus")
   else:
-    print("Âû - Áëèçíåöû")
-elif month == "Èşíü":
+    print("You are Gemini")
+elif month == "June":
   if (day >= 1 and day < 22):
-    print("Âû - Áëèçíåöû")
+    print("You are Gemini")
   else:
-    print("Âû - Ğàê")
-elif month == "Èşëü":
+    print("You are Cancer")
+elif month == "July":
   if (day >= 1 and day < 23):
-    print("Âû - Ğàê")
+    print("You are Cancer")
   else:
-    print("Âû - Ëåâ")
-elif month == "Àâãóñò":
+    print("You are a lion")
+elif month == "August":
   if (day >= 1 and day < 24):
-    print("Âû - Ëåâ")
+    print("You are a lion")
   else:
-    print("Âû - Äåâà")
-elif month == "Ñåíòÿáğü":
+    print("You are Virgo")
+elif month == "September":
   if (day >= 1 and day < 24):
-    print("Âû - Äåâà")
+    print("You are Virgo")
   else:
-    print("Âû - Âåñû")
-elif month == "Îêòÿáğü":
+    print("You are Libra")
+elif month == "October":
   if (day >= 1 and day < 24):
-    print("Âû - Âåñû")
+    print("You are Libra")
   else:
-    print("Âû - Ñêîğïèîí")
-elif month == "Íîÿáğü":
+    print("You are a Scorpio")
+elif month == "November":
   if (day >= 1 and day < 23):
-    print("Âû - Ñêîğïèîí")
+    print("You are a Scorpio")
   else:
-    print("Âû - Ñòğåëåö")
+    print("You are a Sagittarius")
 else:
   if (day >= 1 and day < 22):
-    print("Âû - Ñòğåëåö")
+    print("You are a Sagittarius")
   else:
-    print("Âû - Êîçåğîã")
+    print("You are Capricorn")
