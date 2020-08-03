@@ -1,0 +1,62 @@
+month = input ("Ââåäèòå ìåñÿö Âàøåãî ğîæäåíèÿ: ")
+day = int(input ("Ââåäèòå äåíü Âàøåãî ğîæäåíèÿ: "))
+if month == "ßíâàğü":
+  if (day >= 1 and day < 21):
+    print("Âû - Êîçåğîã")
+  else:
+    print("Âû - Âîäîëåé")
+elif month == "Ôåâğàëü":
+  if (day >= 1 and day < 19):
+    print("Âû - Âîäîëåé")
+  else:
+    print("Âû - Ğûáû")
+elif month == "Ìàğò":
+  if (day >= 1 and day < 21):
+    print("Âû - Ğûáû")
+  else:
+    print("Âû - Îâåí")
+elif month == "Àïğåëü":
+  if (day >= 1 and day < 21):
+    print("Âû - Îâåí")
+  else:
+    print("Âû - Òåëåö")
+elif month == "Ìàé":
+  if (day >= 1 and day < 22):
+    print("Âû - Òåëåö")
+  else:
+    print("Âû - Áëèçíåöû")
+elif month == "Èşíü":
+  if (day >= 1 and day < 22):
+    print("Âû - Áëèçíåöû")
+  else:
+    print("Âû - Ğàê")
+elif month == "Èşëü":
+  if (day >= 1 and day < 23):
+    print("Âû - Ğàê")
+  else:
+    print("Âû - Ëåâ")
+elif month == "Àâãóñò":
+  if (day >= 1 and day < 24):
+    print("Âû - Ëåâ")
+  else:
+    print("Âû - Äåâà")
+elif month == "Ñåíòÿáğü":
+  if (day >= 1 and day < 24):
+    print("Âû - Äåâà")
+  else:
+    print("Âû - Âåñû")
+elif month == "Îêòÿáğü":
+  if (day >= 1 and day < 24):
+    print("Âû - Âåñû")
+  else:
+    print("Âû - Ñêîğïèîí")
+elif month == "Íîÿáğü":
+  if (day >= 1 and day < 23):
+    print("Âû - Ñêîğïèîí")
+  else:
+    print("Âû - Ñòğåëåö")
+else:
+  if (day >= 1 and day < 22):
+    print("Âû - Ñòğåëåö")
+  else:
+    print("Âû - Êîçåğîã")
