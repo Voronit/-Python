@@ -1,19 +1,11 @@
 n = int(input("Enter number n: "))
 
 def fib (n):
-  i1 = 1
-  i2 = 1
-  i = 3
-  if n == 1:
-    return (i1)
-  elif n == 2:
-    return (i2)
+  if n == 2:
+    return 1
+  elif n == 1:
+    return 1
   else:
-    while i <= n:
-      i3 = i2 + i1
-      i1 = i2
-      i2 = i3
-      i += 1
-    return (i3)
+    return fib(n-2) + fib(n-1)
 
 print (fib(n))
