@@ -1,10 +1,10 @@
 l = ['2018-01-01', 'yandex', 'cpc', 100]
 
-def fun(q):
-  if len(q) == 1:
-    return q[0]
+def fun(dictionary):
+  if len(dictionary) == 1:
+    return dictionary[0]
   else:
-    t = q[1:]
-    return {q[0]:  fun(t)}
-
+    slice = dictionary[1:]
+    return {dictionary[0]:  fun(slice)}
+    
 print (fun(l))
