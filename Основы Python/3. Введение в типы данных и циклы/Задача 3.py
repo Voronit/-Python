@@ -12,9 +12,9 @@ geo_logs = [
 ]
 
 new_geo_logs = []
-i = 0
-while i < len(geo_logs):
-  if (geo_logs[i]["visit" + str(i+1)][1]) == "Russia":
-    new_geo_logs.append(geo_logs[i])
-  i += 1
+
+for log in geo_logs:
+  if (list(log.values())[0][1]) == "Russia":
+    new_geo_logs.append(log)
+
 print(new_geo_logs)

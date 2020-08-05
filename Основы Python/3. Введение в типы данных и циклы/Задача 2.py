@@ -30,15 +30,8 @@ cook_book = [
 ]
 person = 5
 
-i = 0
-j = 0
-while i < len(cook_book):
-  for q in cook_book[i][0]:
-    print (q, end = "")
-  print (":")
-  while j < len(cook_book[i][1]):
-    print (cook_book[i][1][j][0] + ", " + str(person*cook_book[i][1][j][1]) + cook_book[i][1][j][2])
-    j += 1
-  j = 0
-  i += 1
+for recipe in cook_book:
+  print(recipe[0])
+  for ingrs in recipe[1]:
+    print("{}, {} {}".format(ingrs[0], ingrs[1] * person, ingrs[2]))
   print()

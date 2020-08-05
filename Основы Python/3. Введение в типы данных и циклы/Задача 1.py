@@ -5,9 +5,8 @@ if len(girls) == len(boys):
   girls.sort ()
   boys.sort ()
   print("Perfect couples:")
-  i = 0
-  while i < len(girls):
-    print(girls[i] + " è " + boys[i])
-    i += 1
+  for i, j in zip(girls, boys):
+    print(i + " è " + j)
+
 else:
   print("Someone may not have enough pair, the program will not run")
