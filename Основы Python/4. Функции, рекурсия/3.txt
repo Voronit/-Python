@@ -4,7 +4,6 @@ def fun(dictionary):
   if len(dictionary) == 1:
     return dictionary[0]
   else:
-    slice = dictionary[1:]
-    return {dictionary[0]:  fun(slice)}
+    return {dictionary[0]:  fun(dictionary[1:])}
     
 print (fun(l))
