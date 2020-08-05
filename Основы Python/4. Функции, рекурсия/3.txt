@@ -1,0 +1,10 @@
+l = ['2018-01-01', 'yandex', 'cpc', 100]
+
+def fun(q):
+  if len(q) == 1:
+    return q[0]
+  else:
+    t = q[1:]
+    return {q[0]:  fun(t)}
+
+print (fun(l))
