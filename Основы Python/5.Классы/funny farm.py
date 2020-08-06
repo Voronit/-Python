@@ -1,11 +1,11 @@
 class Animals ():                                #General class of animals
   
-  hunger = "Yes"                                 #Field that indicates whether the animal is hungry
+  hunger = True                                 #Field that indicates whether the animal is hungry
 
   def feed(self):                                #The function with which we feed our animals
-    if self.hunger == "Yes":
+    if self.hunger == True:
       print ("You fed " + self.name)
-      self.hunger = "No"
+      self.hunger = False
     else:
       print ("This animal is already fed")
 
@@ -14,12 +14,12 @@ class Animals ():                                #General class of animals
 
 class Milk (Animals):                            #The general class of lactating animals, i.e. cows and goats
 
-  milk = "Yes"                                   #A field that shows whether the animal can be milked at the moment
+  milk = True                                   #A field that shows whether the animal can be milked at the moment
 
   def milk_an_animal (self):                     #The function with which we milk animals
-    if self.milk == "Yes":
+    if self.milk == True:
       print ("You milked " + self.name)
-      self.milk = "No"
+      self.milk = False
     else:
       print ("You have already milked this animal")
 
@@ -39,12 +39,12 @@ class Goat (Milk):                        #Goat class
 
 class Poultry (Animals):                  #General class of poultry
 
-  eggs = "Yes"                            #A field that shows whether it is currently possible to collect eggs from an animal
+  eggs = True                            #A field that shows whether it is currently possible to collect eggs from an animal
 
   def collect_eggs (self):                #The function with which we collect eggs
-    if self.eggs == "Yes":
+    if self.eggs == True:
       print ("You collected eggs from " + self.name)
-      self.eggs = "No"
+      self.eggs = False
     else:
       print ("This animal has already collected eggs")
 
@@ -71,12 +71,12 @@ class Duck (Poultry):                     #Ducks class
 
 class Sheep (Animals):                    #Sheep class, inherited only from Animals
 
-  wool = "Yes"                            #The field that shows whether it is possible to collect wool from the animal at the moment
+  wool = True                            #The field that shows whether it is possible to collect wool from the animal at the moment
 
   def to_cut (self):                      #The function with which we shear sheep
-    if self.wool == "Yes":
+    if self.wool == True:
       print ("You collected wool from " + self.name)
-      self.wool = "No"
+      self.wool = False
     else:
       print ("This animal has already collected wool")
 
