@@ -3,9 +3,14 @@ def main (_file):
     cook_book = {}
     i = True
     for lines in file:
+        dish = ""
         if i == True:
-            cook_book.update({lines: support1(_file, lines)})
-            i = False
+            for line in lines:
+                if line != "\n":
+                    dish += line
+                else:
+                    cook_book.update({dish: support1(_file, lines)})
+                    i = False
         elif lines == "\n":
             i = True
     file.close()
@@ -41,13 +46,13 @@ def support2 (_file, line):
         if lines == line:
             for line in lines:
                 if  ind == "ingredient_name":
-                    if line != "|":
+                    if line != "|" and line != " ":
                         ign += line
                     elif line == "|":
                         sup.update({ind: ign})
                         ind = "quantity"
                 elif ind == "quantity":
-                    if line != "|":
+                    if line != "|" and line != " ":
                         qua += line
                     elif line == "|":
                         sup.update({ind: qua})
